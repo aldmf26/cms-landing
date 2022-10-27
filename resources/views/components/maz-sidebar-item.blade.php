@@ -1,9 +1,7 @@
 @props(['active', 'icon', 'link', 'name'])
 
 @php
-$classes = ($active ?? false)
-            ? 'sidebar-item  active'
-            : 'sidebar-item';
+    $classes = $active ?? false ? 'sidebar-item  active' : 'sidebar-item';
 @endphp
 
 <li class="sidebar-item">
